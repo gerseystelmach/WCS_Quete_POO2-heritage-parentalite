@@ -1,6 +1,6 @@
 <?php
 
-// Instantiating a car
+// Instantiating cars
 
 require_once'Car.php';
 require_once'Vehicle.php';
@@ -10,8 +10,7 @@ echo $car->forward();
 
 
 
-// Instantiating a bicycle:
-
+// Instantiating bicycles 
 require_once 'Bicycle.php';
 
 $bike = new Bicycle("blue", 1);
@@ -21,7 +20,7 @@ echo $bike->brake();
 echo 'Bike speed: ' . $bike->getCurrentSpeed() . ' km/h' . PHP_EOL;
 
 
-// Instantiating a truck
+// Instantiating trucks
 
 require_once 'Truck.php';
 
