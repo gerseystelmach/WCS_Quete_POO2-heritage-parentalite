@@ -13,10 +13,10 @@ class Car extends Vehicle
 
     public function __construct(string $color, int $nbSeats, string $energyType) 
     {
-        //puxa as informações do construct de Vehicle.php
+        //Get __construct from Vehicle.php
         parent::__construct($color, $nbSeats);
         $this->setEnergyType($energyType);
-        //Maneira alternativa de definir a energia ao inves da formula abaixo.
+        //Alternative way to set a parameter
         /* $this->energyType = $energyType; */
 
     }
@@ -61,58 +61,7 @@ class Car extends Vehicle
 
     }
 
-   /*  public function forward () 
-
-    {
- 
-    $this->currentSpeed = 30;
-    return 'Accelerating... Your currently speed is 30km/h ';
- 
-}
-    
-
-    public function brake () 
-    {
-    $brakeAlert = "";
-        while ($this->currentSpeed > 0) {
-        $this->currentSpeed--;
-        $brakeAlert .= "Braking... Speed at " . $this->currentSpeed . " " . PHP_EOL;
-       
-        }
-        $brakeAlert .= "Car stopped.";
-        return $brakeAlert;
-        
-
-}
-
-
-
-    public function getNbWheels(): int
-    {
-    return $this->nbWheels;
-
-}
-
-    public function getCurrentSpeed(): int
-    {
-   
-    return $this->currentSpeed;
-
-    }
-
-    public function getColor(): string
-    {
-
-    return $this->color;
-
-    }
-
-    public function getNbSeats(): string
-    {
-
-    return $this->nbSeats;
-
-    } */
+   /
 
   
  }
